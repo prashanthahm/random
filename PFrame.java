@@ -1,0 +1,4 @@
+enum PFrame
+{
+	WOOD,PLASTIC,FIBER,ALUMINIUM,IRON;
+}
