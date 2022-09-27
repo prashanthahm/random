@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+
+<form action = "jobapplicationform">
+Name:&nbsp;&nbsp;<input type="text" id = "name" name = "name"/>
+<br>
+<br>
+E-Mail:&nbsp;&nbsp;<input type="text" id = "email" name = "email"/>
+<br>
+<br>
+Phone No:&nbsp;&nbsp;<input type = "text" id="phone no" name = "phoneno"/>
+<br>
+<br>
+Alternative PhNo:<input type = "text" name= "altPhno"/>
+<br>
+<br>
+
+<label>
+Select Gender :<br>
+<input type="radio" id ="gender" name ="gen" value = "male">
+<label for="gender">male</label>&nbsp;&nbsp;
+<input type="radio" id ="gender" name ="gen" value = "female">
+<label for="gender">female</label>&nbsp;&nbsp;
+<input type="radio" id ="gender" name ="gen" value ="others">
+<label for="gender">others</label><br>
+</label>
+
+<br>
+
+Qualification :
+<Select name = "qualification">
+<option>----Select Qualification----</option>
+
+<option value = "BE">BE</option>
+<option value ="BCA">BCA</option>
+<option value = "MCA">MCA</option>
+<option value = "BCom">BCom</option>
+</Select>
+
+<br>
+<br>
+
+Year of Passout :
+<Select name = "yop">
+<option>----Select YOP----</option>
+
+<option value ="2019">2019</option>
+<option value = "2020">2020</option>
+<option value = "2021">2021</option>
+<option value = "2022">2022</option>
+</Select>
+
+<br>
+<br>
+
+University :
+<Select name = "University">
+<option>----Select University----</option>
+<option value ="VTU">VTU</option>
+<option value = "Reva University"> Kuvempu University</option>
+<option value = "KLE University">Banglore University</option>
+<option value = "Davanagere University">Vishveshwaraiah University</option>
+<option value = "KCD University Dharwad">Dharwad University</option>
+</Select>
+<br>
+<br>
+
+Address :<br><br>
+<textarea rows="10" cols="20" name = "address"></textarea>
+<br>
+Skills :<br><br>
+<input type ="checkbox" id = "core java" name = "skills" value = "Core Java">
+<label for="core java">Core java</label> &nbsp;&nbsp;&nbsp;
+
+<input type ="checkbox" id ="collection"name = "skills1" value = "Collection" >
+<label for="core java">Collection</label>&nbsp;&nbsp;&nbsp;
+
+<input type ="checkbox" id ="exception"name = "skills2" value ="Exception handling">
+<label for="core java">Exception handling</label><br>
+
+<input type ="checkbox" id ="servlet" name = "skills3" value = "Servlet">
+<label for="core java">Servlet</label>&nbsp;&nbsp;&nbsp;
+
+<input type ="checkbox" id ="spring" name = "skills" value ="Spring">
+<label for="core java">Spring</label>&nbsp;&nbsp;&nbsp;
+
+<input type ="checkbox" id ="sql" name = "skills" value ="SQL">
+<label for="sql">SQL</label><br>
+
+<input type ="checkbox" id ="git" name = "skills" value ="GIT HUB">
+<label for="sql">GIT HUB</label>&nbsp;&nbsp;&nbsp;
+
+<input type ="checkbox" id ="spring boot" name = "skills" value ="Spring Boot">
+<label for="sql">Spring Boot</label>&nbsp;&nbsp;&nbsp;
+
+<input type ="checkbox" id ="html"name = "skills" value ="HTML">
+<label for="sql">HTML</label><br>
+
+<input type ="checkbox" id ="js" name = "skills" value ="JavaScript">
+<label for="sql">JavaScript</label>&nbsp;&nbsp;&nbsp;
+
+<input type ="checkbox" id ="css" name = "skills" value ="CSS">
+<label for="sql">CSS</label>&nbsp;&nbsp;&nbsp;
+
+<input type ="checkbox" id ="eclipse" name = "skills" value ="Eclipse">
+<label for="sql">Eclipse</label><br>
+
+<input type ="checkbox" id ="JDBC" name = "skills" value ="JDBC">
+<label for="JDBC">JDBC</label>&nbsp;&nbsp;&nbsp;
+
+<input type ="checkbox" id ="Hibernate" name = "skills" value ="Hibernate">
+<label for="Hibernate">Hibernate</label>&nbsp;&nbsp;&nbsp;
+
+<input type ="checkbox" id ="Apache Tomcat 9" name = "skills" value ="Apache Tomcat 9">
+<label for="Apache Tomcat 9">Apache Tomcat 9</label><br>
+
+<br>
+<br>
+
+Expected Salary :<input type ="text" id ="salary" name = "salary"/>
+<br>
+<br>
+
+Experience :
+<Select name = "experience">
+<option>----Experience----</option>
+<option value = "0">0</option>
+<option value = "1">1</option>
+<option value ="2">2</option>
+<option value="3">2-3</option>
+<option value="4">3-5</option>
+<option value="5">5-10</option>
+<option value="6">10-15</option>
+<option value="7">15-25</option>
+</Select>
+<br>
+<br>
+ID Proof :
+
+<Select name = "idproof">
+<option>----id proof----</option>
+<option value = "Adhaar Card">Aadhaar Card</option>
+<option value="Voter id">Voter id</option>
+<option value="pan Card">pan Card</option>
+<option value="Ration card">Ration card</option>
+<option value="income certificate">income certificate</option>
+</Select>
+<br>
+<br>
+ID Proof No :<input type ="Select" id ="id proof no" name = "idProofNo"/>
+<br>
+<br>
+<input type = "submit"  value="click"/>
+
+</form>
+</body>
+</html>
