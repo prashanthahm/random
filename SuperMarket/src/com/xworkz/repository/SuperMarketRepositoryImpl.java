@@ -18,8 +18,8 @@ public class SuperMarketRepositoryImpl implements SuperMarketRepository {
 	public boolean save(SuperMarketDTO dto) {
 		System.out.println("date is saved"+dto);
 		try {
-			Connection connection = DriverManager.getConnection(URL.getValues(), USERNAME.getValues(),SECRET.getValues());
-			String sql = "insert into super_market values(?,?,?,?,?,?)";
+			Connection connection = DriverManager.getConnection(EnumDetails.URL.getValues(), EnumDetails.USERNAME.getValues(),EnumDetails.SECRET.getValues());
+			String sql = "insert into supermarket values(?,?,?,?,?,?)";
 			PreparedStatement prepareStatement = connection.prepareStatement(sql);
 			prepareStatement.setInt(1, dto.getId());
 			prepareStatement.setString(2, dto.getName());
@@ -34,14 +34,14 @@ public class SuperMarketRepositoryImpl implements SuperMarketRepository {
 		} catch (SQLException e) {
 			e.printStackTrace();
 		}
-		return false;
+		return true;
 	}
 
 	@Override
 	public void displayByName(String name) {
 		try {
-			Connection connection = DriverManager.getConnection(URL.getValues(),USERNAME.getValues(),SECRET.getValues());
-			String sql = "select * from super_market where name =?";
+			Connection connection = DriverManager.getConnection(EnumDetails.URL.getValues(),EnumDetails.USERNAME.getValues(),EnumDetails.SECRET.getValues());
+			String sql = "select * from supermarket where name =?";
 			PreparedStatement prepareStatement = connection.prepareStatement(sql);
 			prepareStatement.setString(1, name);
 			ResultSet executeQuery = prepareStatement.executeQuery();
@@ -67,8 +67,8 @@ public class SuperMarketRepositoryImpl implements SuperMarketRepository {
 	public boolean save(List<SuperMarketDTO> list) {
 		System.out.println("method saved using list"+list);
 		try {
-			Connection connection = DriverManager.getConnection(URL.getValues(), USERNAME.getValues(),SECRET.getValues());
-			String sql = "insert into super_market values(?,?,?,?,?,?)";
+			Connection connection = DriverManager.getConnection(EnumDetails.URL.getValues(), EnumDetails.USERNAME.getValues(),EnumDetails.SECRET.getValues());
+			String sql = "insert into supermarket values(?,?,?,?,?,?)";
 			PreparedStatement prepareStatement = connection.prepareStatement(sql);
 			
 			
