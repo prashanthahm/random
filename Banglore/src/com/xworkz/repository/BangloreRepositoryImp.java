@@ -15,11 +15,11 @@ public class BangloreRepositoryImp implements BangloreRepository {
 		
 		try {
 			Connection connection = DriverManager.getConnection(Account.URL.getValues(), Account.USERNAME.getValues(), Account.SECRET.getValues());
-			String insert = "insert into city values (?,?,?)";
+			String insert = "insert into banglore values (?,?,?)";
 			PreparedStatement prepareStatement = connection.prepareStatement(insert);
-			prepareStatement.setString(3, dto.getLanguage());
-			prepareStatement.setString(4, dto.getCountry());
-			prepareStatement.setString(5, dto.getState());
+			prepareStatement.setString(1, dto.getLanguage());
+			prepareStatement.setString(2, dto.getCountry());
+			prepareStatement.setString(3, dto.getState());
 
 			int executeUpdate = prepareStatement.executeUpdate();
 			if(executeUpdate>0) {

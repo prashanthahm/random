@@ -9,9 +9,9 @@ public class BangloreDisplay {
 	public static void main(String[] args) {
 		BangloreDTO BangloreDTO = new BangloreDTO("kannada", "india", "karnataka");
 		BangloreDTO BangloreDTO1 = new BangloreDTO("malayalam", "india", "kerala");
-		BangloreDTO BangloreDTO2 = new BangloreDTO("Hindi", "india", "ka");
+		BangloreDTO BangloreDTO2 = new BangloreDTO("Hindi", "india", "Delhi");
 		BangloreDTO BangloreDTO3 = new BangloreDTO("marati", "india", "maharashtra");
-		BangloreDTO BangloreDTO4 = new BangloreDTO("Bengali", "india", "WB");
+		BangloreDTO BangloreDTO4 = new BangloreDTO("Bengali", "india", "WestBengal");
 		
 		BangloreService service =new BangloreServiceImp();
 		service.validateAndSave(BangloreDTO);

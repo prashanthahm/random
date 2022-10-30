@@ -2,7 +2,7 @@ package com.xworkz.enumdetail;
 
 public enum Account {
 	
-URL("jdbc:mysql://localhost:3306/"),USERNAME("root"),SECRET("root");
+URL("jdbc:mysql://localhost:3306/student"),USERNAME("root"),SECRET("root");
 	
 	private String values;
 	
